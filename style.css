@@ -49,3 +49,38 @@ body{
 .icon-menu {
   color: tomato;
 }
+
+/* <<<< NEWS HIGHLIGHTS >>>> */
+
+.news-highlights {
+  display: grid;
+  height: 600px;
+  grid-auto-rows: repeat(3, 200px);
+  grid-row-gap: 5px;
+}
+
+.news-highlights > div {
+  background-color: blue;
+  margin: 0 5px;
+}
+
+/* <<<< LATEST NEWS >>>> */
+
+.latest-news {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.latest-news-segments {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 10px;
+}
+
+.latest-news-pic {
+  background: blue;
+}
+
+.latest-news-segments span {
+  color: lightgray;
+}
