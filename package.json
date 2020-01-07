@@ -1,0 +1,22 @@
+{
+  "name": "next-web-clone",
+  "version": "1.0.0",
+  "description": "\"# next-web-clone\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecell/next-web-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecell/next-web-clone/issues"
+  },
+  "homepage": "https://github.com/codecell/next-web-clone#readme",
+  "devDependencies": {
+    "stylelint": "^12.0.1"
+  }
+}
