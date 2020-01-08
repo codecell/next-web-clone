@@ -6,14 +6,25 @@
 
 body{
   max-width: 375px;
+  background-color: whitesmoke;
   margin: 0 auto;
 }
 
+main {
+  background-color: white;
+  margin-top: 70px;
+  border: 2px solid red;
+}
+
 .first-nav-bar{
+  position: fixed;
+  width: 375px;
+  top: 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 50px;
   margin-top: 15px;
+  background-color: white;
   border: 1px solid rgb(240, 234, 234);
   border-bottom: none;
 }
@@ -83,4 +94,46 @@ body{
 
 .latest-news-segments span {
   color: lightgray;
+}
+
+.rounds {
+  margin: auto 20px ;
+}
+
+.title-div {
+  height: 40px;
+  background-color: #ff4422;
+  color: white;
+}
+
+.title-div > p {
+  margin: 40px auto auto 70px;
+  font-size: 20px;
+}
+
+.round-info-div {
+  height: 60px;
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.round-img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background-color: thistle;
+  margin: 10px;
+}
+
+.investment-card {
+  border-bottom: 1px solid  #ff4422;
+}
+
+.popular {
+  height: 251px;
+  color: white;
+  background-image: url('./assets/images/popular.png');
+  padding: 180px 0 0 10px;
+}
+
+.most-popular {
 }
