@@ -276,3 +276,74 @@ hr {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
 }
+
+/* <<< DEALS SECTION >>> */
+.deals {
+  display: grid;
+  grid-row-gap: 5px;
+}
+
+.deals > header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: tomato;
+}
+
+.deal-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+}
+
+.deal-pic {
+  background: url('./assets/images/deals.jpg');
+  height: 80px;
+  background-size: cover;
+}
+
+.old-price {
+  color: grey;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: black;
+  height: 110px;
+}
+
+div.socials {
+  display: flex;
+  margin-left: 20px;
+}
+
+.socials > a {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: #222;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 3px 5px 3px;
+}
+
+.footer-links {
+  margin: 10px 5px 5px 33px;
+}
+
+.footer-links > a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #979797;
+  margin-right: 5px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 375px) and (max-width: 780px) {
+  
+}
