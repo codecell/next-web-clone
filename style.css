@@ -10,9 +10,18 @@ body{
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main {
   background-color: white;
-  margin-top: 70px;
+  margin-top: 60px;
+}
+
+section {
+  margin-top: 5px;
 }
 
 .first-nav-bar{
@@ -22,7 +31,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 50px;
-  margin-top: 15px;
   background-color: white;
   border: 1px solid rgb(240, 234, 234);
   border-bottom: none;
@@ -131,9 +139,88 @@ main {
   height: 251px;
   color: white;
   background-image: url('./assets/images/popular.png');
-  padding: 180px 0 0 10px;
+  position: relative;
 }
 
 hr {
-  border: 1.5px solid lightgray;
+  border: 1px solid lightgray;
+}
+
+
+/* <<< APPS SECTION >>>> */
+
+.app-main, .gear-main, .tech-main, .creative-main, .podium-main {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.latest-app-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/* <<< GEAR SECTION >>>> */
+.gear-main-pic {
+  background: url('./assets/images/laptop-gear.jpg');
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.most-popular {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+.latest-gear, .latest-app, .latest-tech, .latest-creative, .latest-podium {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.gear-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/*<<< TECH SECTION >>> */
+
+.tech-main-pic {
+  background: url('./assets/images/tech-car.jpg');
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.tech-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/*<<< CREATIVE SECTION >>> */
+
+.creative-main-pic {
+  background: url('./assets/images/creative.jpg');
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.creative-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+
+/*<<< CREATIVE SECTION >>> */
+
+.creative-main-pic {
+  background: url('./assets/images/podium.jpg');
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.podium-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
 }
