@@ -149,7 +149,10 @@ hr {
 
 /* <<< APPS SECTION >>>> */
 
-.app-main, .gear-main, .tech-main, .creative-main, .podium-main {
+.app-main, .gear-main,
+.tech-main, .creative-main,
+.podium-main, .insights-main,
+.launch-main, .distract-main {
   display: grid;
   grid-row-gap: 10px;
 }
@@ -173,7 +176,10 @@ hr {
   left: 10px;
 }
 
-.latest-gear, .latest-app, .latest-tech, .latest-creative, .latest-podium {
+.latest-gear, .latest-app,
+.latest-tech, .latest-creative, 
+.latest-podium, .latest-insights, 
+.latest-launch, .latest-distract{
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -211,16 +217,62 @@ hr {
 }
 
 
-/*<<< CREATIVE SECTION >>> */
+/* <<< CREATIVE SECTION >>> */
 
-.creative-main-pic {
+.podium-main-pic {
   background: url('./assets/images/podium.jpg');
+  background-size: cover;
   height: 251px;
   color: #fff;
   position: relative;
 }
 
 .podium-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/* <<< INSIGHTS SECTION >>> */
+
+.insights-main-pic {
+  background: url('./assets/images/insights.jpg');
+  background-size: cover;
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.insights-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/* <<< LAUNCH SECTION >>> */
+
+.launch-main-pic {
+  background: url('./assets/images/insights.jpg');
+  background-size: cover;
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.launch-small-img {
+  background: url('./assets/images/tiger-smaller-gear.jpg');
+  background-size: cover;
+}
+
+/* <<< DISTRACT SECTION >>> */
+
+.distract-main-pic {
+  background: url('./assets/images/insights.jpg');
+  background-size: cover;
+  height: 251px;
+  color: #fff;
+  position: relative;
+}
+
+.distract-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
 }
