@@ -37,7 +37,7 @@ section {
   border-bottom: none;
 }
 
-.top-navbar-row ul {
+.top-navbar-row ul, .second-navbar-row ul {
   display: none;
 }
 
