@@ -5,7 +5,8 @@
 }
 
 body{
-  max-width: 375px;
+  min-width: 375px;
+  max-width: 760px;
   background-color: whitesmoke;
   margin: 0 auto;
 }
@@ -24,9 +25,9 @@ section {
   margin-top: 5px;
 }
 
-.first-nav-bar{
+.navbar{
   position: fixed;
-  width: 375px;
+  width: 100%;
   top: 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -36,9 +37,12 @@ section {
   border-bottom: none;
 }
 
+.top-navbar-row ul {
+  display: none;
+}
+
 .tnw-logo-container{
   background-image: url('./assets/images/tnw-logo.png');
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -46,6 +50,7 @@ section {
 .icons-container {
   display: flex;
   justify-content: flex-end;
+  width: 100% !important;
 }
 
 .icons-container > div {
@@ -344,6 +349,88 @@ div.socials {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 375px) and (max-width: 780px) {
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+  body {
+    max-width: 780px;
+  }
+
+  .icons-container i {
+    display: none;
+  }
+
+  .icons-container div {
+    border-left: none;
+  }
   
-}
+  .navbar {
+    font-family: monospace;
+    height: 80px;
+    width: 100%;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .icons-container {
+    height: 80px;
+    flex-direction: column;
+  }
+  
+  .top-navbar-row {
+    background: #000000;
+    height: 35px !important;
+    width: 100% !important;
+  }
+
+  .top-navbar-row ul, .second-navbar-row ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 9px;
+  }
+  
+  .top-navbar-row ul > li {
+    display: inline-block;
+    color: #f3f3f3;
+    font-size: 0.9em;
+    margin-right: 4px;
+
+  }
+
+  .second-navbar-row {
+    background-color: #fff;
+    height: 45px !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightslategray;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .second-navbar-row ul > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+  /* news highlights */
+
+  .large-pic {
+    grid-area: large-pic;
+  }
+
+  .top-right-pic {
+    grid-area: top-right-pic;
+  }
+
+  .bottom-right-pic {
+    grid-area: bottom-right-pic;
+  }
+
+  .news-highlights {
+    grid-template-areas: 
+    "large-pic  large-pic top-right-pic"
+    "large-pic  large-pic bottom-right-pic";
+  }
+
+} 
