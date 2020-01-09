@@ -21,7 +21,7 @@ main {
 }
 
 section {
-  margin-top: 5px;
+  margin: 5px auto auto 20px;
 }
 
 .navbar{
@@ -77,9 +77,10 @@ section {
 
 .news-highlights {
   display: grid;
-  height: 600px;
+  height: 500px;
   grid-auto-rows: repeat(3, 200px);
   grid-row-gap: 5px;
+  margin: 5px 5px 80px 5px !important;
 }
 
 .news-highlights > div {
@@ -97,11 +98,12 @@ section {
 .latest-news-segments {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-column-gap: 10px;
+  column-gap: 10px;
 }
 
 .latest-news-pic {
   background: blue;
+  height: 50px;
 }
 
 .latest-news-segments span {
@@ -388,6 +390,11 @@ div.socials {
     max-width: 1024px;
   }
 
+  div.seperate-nabar {
+    height: 30px;
+    width: 100%;
+  }
+
   .icons-container i {
     display: none;
   }
@@ -449,9 +456,7 @@ div.socials {
     margin-right: 10px;
   }
 
-
   /* news highlights */
-
   .large-pic {
     grid-area: large-pic;
   }
@@ -476,6 +481,7 @@ div.socials {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    row-gap: 10px;
   }
 
   .latest-news-segments {
@@ -527,6 +533,20 @@ div.socials {
   body {
     min-width: 1024px;
     max-width: 1400px;
+  }
+
+  div.seperate-nabar {
+    height: 30px;
+    width: 100%;
+  }
+
+  section {
+    margin: auto 80px;
+  }
+
+  section.news-highlights {
+    margin: unset;
+    margin-bottom: 80px !important;
   }
 
   .icons-container i {
@@ -626,11 +646,42 @@ div.socials {
     display: inline-block !important;
   }
 
+  /* news highlights */
+  .large-pic {
+    grid-area: large-pic;
+  }
+
+  .top-right-pic {
+    grid-area: top-right-pic;
+  }
+
+  .bottom-right-pic {
+    grid-area: bottom-right-pic;
+  }
+
+  .news-highlights {
+    grid-template-areas: 
+    "large-pic  large-pic top-right-pic"
+    "large-pic  large-pic bottom-right-pic";
+  }
+
   /* Latest news */
   .latest-news-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
+  }
+
+  .latest-news-segments {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .latest-news-pic {
+    max-width: 540px;
+    height: 100px;
+    max-height: 270px;
   }
 
 }
