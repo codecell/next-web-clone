@@ -284,20 +284,21 @@ hr {
 
 /* <<< DEALS SECTION >>> */
 .deals {
+  width: 100%;
   display: grid;
-  grid-row-gap: 5px;
+  row-gap: 5px;
 }
 
 .deals > header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
   color: tomato;
 }
 
 .deal-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-column-gap: 20px;
+  column-gap: 20px;
 }
 
 .deal-pic {
@@ -319,9 +320,15 @@ footer {
   height: 110px;
 }
 
+.footer-top {
+  text-align: center;
+  padding: 20px;
+}
+
 div.socials {
   display: flex;
   margin-left: 20px;
+  justify-content: center;
 }
 
 .socials > a {
@@ -344,6 +351,30 @@ div.socials {
   font-size: 14px;
   color: #979797;
   margin-right: 5px;
+}
+
+.footer-top{
+  display: grid;
+  background-color: #131313;
+}
+
+.copyright {
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  padding: 20px;
+}
+
+copyright > p {
+  margin: 0 !important;
+}
+
+.copyright p > span {
+  color: red;
+}
+
+.footer-logo {
+  height: 10px;
 }
 
 
@@ -466,6 +497,15 @@ div.socials {
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
+  }
+
+  /* Deals */
+
+  .deals-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
   }
 
 } 
