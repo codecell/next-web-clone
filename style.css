@@ -125,6 +125,12 @@ section {
   font-size: 20px;
 }
 
+/* Rounds */
+
+.separator-span {
+  display: none;
+}
+
 .round-info-div {
   height: 60px;
   background-color: rgba(255, 68, 34, 0.08);
@@ -497,10 +503,18 @@ div.socials {
 
   /* Rounds */
 
-  .rounds-main{
+  .rounds-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+  }
+
+  .rounds-links > p {
+    display: inline-block;
+  }
+
+  .separator-span {
+    display: inline-block;
   }
 
   /* Categories */
@@ -682,6 +696,28 @@ div.socials {
     max-width: 540px;
     height: 100px;
     max-height: 270px;
+  }
+
+    /* Rounds */
+
+  .rounds-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .separator-span {
+    display: inline-block;
+  }
+
+  .latest-rounds-info {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 20px;
+  }
+
+  .rounds-links > p {
+    display: inline-block;
   }
 
 }
