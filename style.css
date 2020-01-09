@@ -633,14 +633,4 @@ div.socials {
     column-gap: 10px;
   }
 
-  .latest-news-segments {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .latest-news-pic {
-    max-width: 540px;
-    height: 100px;
-    max-height: 270px;
-  }
 }
