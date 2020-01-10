@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-/*   overflow-x: hidden; */
+  font-family: 'Kanit', sans-serif;
 }
 
 body{
@@ -21,10 +21,18 @@ main {
   margin-top: 60px;
 }
 
-/* section {
-  margin: 5px auto auto 20px;
+section > h2 {
+  color: #FF4422;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
- */
+
+section > h2 span {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
 .navbar{
   position: fixed;
   width: 100%;
@@ -35,6 +43,7 @@ main {
   background-color: white;
   border: 1px solid rgb(240, 234, 234);
   border-bottom: none;
+  z-index: 9999;
 }
 
 .top-navbar-row ul, .second-navbar-row ul, 
@@ -78,15 +87,71 @@ main {
 
 .news-highlights {
   display: grid;
-  height: 500px;
+  height: 600px;
   grid-auto-rows: repeat(3, 200px);
   grid-row-gap: 5px;
   margin: 5px 5px 80px 5px !important;
 }
 
 .news-highlights > div {
-  background-color: blue;
   margin: 0 5px;
+}
+
+.desktop-logo-parent-div {
+  display: none;
+}
+
+.large-pic {
+  background: linear-gradient(to  bottom right, rgba(255,0,255,0.5), rgba(0, 0, 0, 0.904) 99%),
+  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg)');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.large-pic-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-highlights-side-pic-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-highlights-info-main {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+.news-highlights-info-main-i {
+  font-size: 20px !important;
+  margin-left: 5px;
+}
+
+.news-highlights-info-main > p:first-child {
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+.news-highlights-info-main > p:last-child {
+  color: #979797;
+}
+
+.top-right-pic {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%),
+  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/jeopardy-796x448.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bottom-right-pic {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%),
+  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 /* <<<< LATEST NEWS >>>> */
@@ -103,8 +168,12 @@ main {
 }
 
 .latest-news-pic {
-  background: blue;
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25181_primary_image_wide-540x270.jpg');
   height: 50px;
+}
+
+.latest-news-segments > p {
+  font-size: 22px;
 }
 
 .latest-news-segments span {
@@ -326,6 +395,7 @@ hr {
 footer {
   background: black;
   height: 110px;
+  margin-top: 80px;
 }
 
 .footer-top {
@@ -430,15 +500,18 @@ div.socials {
   .top-navbar-row ul, .second-navbar-row ul {
     list-style: none;
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 5px;
   }
   
   .top-navbar-row ul > li {
     display: inline-block;
-    color: #f3f3f3;
+    color: #959595;
     font-size: 0.9em;
     margin-right: 4px;
+  }
 
+  .top-navbar-news-item {
+    color: #fff !important;
   }
 
   .desktop-screen-ul {
@@ -453,8 +526,8 @@ div.socials {
     justify-content: center;
     align-items: center;
     color: lightslategray;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 300;
+    font-family: 'Rajdhani', sans-serif !important;
   }
 
   .second-navbar-row ul > li {
@@ -476,9 +549,21 @@ div.socials {
   }
 
   .news-highlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-    "large-pic  large-pic top-right-pic"
-    "large-pic  large-pic bottom-right-pic";
+    "large-pic top-right-pic"
+    "large-pic bottom-right-pic";
+    height: 500px;
+  }
+
+  .large-pic-label {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .desktop-logo-parent-div {
+    display: none;
   }
 
   /* Latest news */
@@ -565,7 +650,7 @@ div.socials {
   }
 
   section {
-    margin: auto 80px;
+    margin: 25px 90px;
   }
 
   section.news-highlights {
@@ -617,7 +702,6 @@ div.socials {
   .top-navbar-row ul, .second-navbar-row ul {
     list-style: none;
     display: inline-block;
-    margin-top: 9px;
   }
   
   .top-navbar-row-ul-container {
@@ -628,10 +712,13 @@ div.socials {
 
   .top-navbar-row ul > li {
     display: inline-block;
-    color: #f3f3f3;
-    font-size: 1.2em;
-    margin-right: 4px;
+    color: #959595;
+    font-size: 0.8em;
+    margin: 6px 4px auto auto;
+  }
 
+  .top-navbar-news-item {
+    color: #fff !important;
   }
 
   .desktop-screen-ul {
@@ -645,8 +732,8 @@ div.socials {
     display: flex;
     justify-content: space-between;
     color: lightslategray;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 300;
+    font-family: 'Rajdhani', sans-serif !important;
   }
 
   .desktop-search-div {
@@ -663,7 +750,7 @@ div.socials {
 
   .second-navbar-row ul > li {
     display: inline-block;
-    margin: 7px auto 10px 20px;
+    margin: 7px auto 5px 20px;
   }
 
   .desktop-screen-ul {
@@ -684,27 +771,52 @@ div.socials {
   }
 
   .news-highlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-    "large-pic  large-pic top-right-pic"
-    "large-pic  large-pic bottom-right-pic";
+    "large-pic top-right-pic"
+    "large-pic bottom-right-pic";
+    height: 500px;
+  }
+
+  
+  .desktop-logo-parent-div {
+    margin: 25px 20px auto 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  .tnw-desktop-logo-space {
+    margin-top: 20px;
+  }
+
+  .tnw-desktop-logo-img {
+    height: 110px;
+  }
+
+  .large-pic-label {
+    font-size: 45px;
+    font-weight: bold;
   }
 
   /* Latest news */
   .latest-news-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 25px;
   }
 
   .latest-news-segments {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 15px;
+    margin-bottom: 15px;
   }
 
   .latest-news-pic {
     max-width: 540px;
-    height: 100px;
+    height: 120px;
     max-height: 270px;
   }
 
@@ -766,6 +878,5 @@ div.socials {
   .footer-levels {
     display: inline-block;
   }
-
 
 }
