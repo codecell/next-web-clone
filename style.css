@@ -102,7 +102,7 @@ section > h2 span {
 }
 
 .large-pic {
-  background: linear-gradient(to  bottom right, rgba(255,0,255,0.5), rgba(0, 0, 0, 0.904) 99%),
+  background: linear-gradient(to bottom right, rgba(255,0,255,0.5), rgba(0, 0, 0, 0.904) 99%),
   url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg)');
   background-size: cover;
   background-position: center;
@@ -159,6 +159,7 @@ section > h2 span {
 .latest-news {
   display: grid;
   row-gap: 10px;
+  margin: auto 20px;
 }
 
 .latest-news-segments {
@@ -197,6 +198,13 @@ section > h2 span {
 
 /* Rounds */
 
+.rounds-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  margin: auto 20px;
+}
+
 .separator-span {
   display: none;
 }
@@ -204,6 +212,16 @@ section > h2 span {
 .round-info-div {
   height: 60px;
   background-color: rgba(255, 68, 34, 0.08);
+}
+
+.round-info-div h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.round-info-div h5{
+  font-size: 12px;
+  font-weight: 200;
 }
 
 .round-img {
@@ -215,40 +233,73 @@ section > h2 span {
 }
 
 .investment-card {
-  border-bottom: 1px solid  #ff4422;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 20px;
+  border-bottom: 1px solid  rgba(255, 68, 34, 0.5);
 }
 
-.popular {
-  height: 251px;
-  color: white;
-  background-image: url('./assets/images/popular.png');
-  position: relative;
+.byline-story{
+  font-size: 14px;
+  font-weight: 200;
 }
 
 hr {
-  border: 1px solid lightgray;
+  border: 1px solid rgba(200, 200, 200, 0.2);
+  margin-bottom: 10px;
 }
 
+/* <<< CATEGORIES >>>> */
+
+.most-popular h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 100; 
+}
+
+.most-popular h3 {
+  font-size: 20px;
+  font-weight: 500; 
+}
+
+.author-date {
+  font-weight: 100;
+}
+
+.categories{
+  margin: auto 20px;
+}
 
 /* <<< APPS SECTION >>>> */
+
+.apps-main-pic {
+  height: 466px;
+  color: white; 
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/popular.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 .app-main, .gear-main,
 .tech-main, .creative-main,
 .podium-main, .insights-main,
 .launch-main, .distract-main {
   display: grid;
-  grid-row-gap: 10px;
 }
 
-.latest-app-img {
+.apps-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /* <<< GEAR SECTION >>>> */
 .gear-main-pic {
-  background: url('./assets/images/laptop-gear.jpg');
-  height: 251px;
+  height: 466px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/laptop-gear.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   position: relative;
 }
@@ -264,18 +315,24 @@ hr {
 .latest-podium, .latest-insights, 
 .latest-launch, .latest-distract{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 96px;
+  height: 96px;
+  background-color: rgb(253, 241, 239);
+  color: #ff4422;
 }
 .gear-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /*<<< TECH SECTION >>> */
 
 .tech-main-pic {
-  background: url('./assets/images/tech-car.jpg');
-  height: 251px;
+  height: 466px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/tech-car.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   position: relative;
 }
@@ -283,13 +340,16 @@ hr {
 .tech-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /*<<< CREATIVE SECTION >>> */
 
 .creative-main-pic {
-  background: url('./assets/images/creative.jpg');
-  height: 251px;
+  height: 466px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/creative.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   position: relative;
 }
@@ -297,15 +357,17 @@ hr {
 .creative-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 
-/* <<< CREATIVE SECTION >>> */
+/* <<< PODIUM SECTION >>> */
 
 .podium-main-pic {
-  background: url('./assets/images/podium.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/podium.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 251px;
+  height: 466px;
   color: #fff;
   position: relative;
 }
@@ -313,14 +375,16 @@ hr {
 .podium-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /* <<< INSIGHTS SECTION >>> */
 
 .insights-main-pic {
-  background: url('./assets/images/insights.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/insights.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 251px;
+  height: 466px;
   color: #fff;
   position: relative;
 }
@@ -328,14 +392,16 @@ hr {
 .insights-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /* <<< LAUNCH SECTION >>> */
 
 .launch-main-pic {
-  background: url('./assets/images/insights.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/insights.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 251px;
+  height: 466px;
   color: #fff;
   position: relative;
 }
@@ -343,14 +409,16 @@ hr {
 .launch-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
 }
 
 /* <<< DISTRACT SECTION >>> */
 
 .distract-main-pic {
-  background: url('./assets/images/insights.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/insights.jpg');
   background-size: cover;
-  height: 251px;
+  background-repeat: no-repeat;
+  height: 466px;
   color: #fff;
   position: relative;
 }
@@ -358,29 +426,69 @@ hr {
 .distract-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
+  margin-top: 3px;
+}
+
+.app-main > ul,
+.gear-main > ul,
+.tech-main > ul,
+.creative-main > ul,
+.podium-main > ul,
+.insights-main > ul,
+.launch-main > ul,
+.distract-main > ul {
+  margin-left: 20px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+
+.app-main > ul li::before,
+.gear-main > ul li::before,
+.tech-main > ul li::before,
+.creative-main > ul li::before,
+.podium-main > ul li::before,
+.insights-main > ul li::before,
+.launch-main > ul li::before,
+.distract-main > ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* <<< DEALS SECTION >>> */
 .deals {
   display: grid;
   row-gap: 5px;
+  margin: auto 20px;
+}
+
+.deals-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
 }
 
 .deals > header {
   display: flex;
   justify-content: space-between;
   color: tomato;
+  margin: 50px 0 30px 0;
 }
 
 .deal-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 75px 1fr;
   column-gap: 20px;
+  height: 75px;
 }
 
 .deal-pic {
   background: url('./assets/images/deals.jpg');
-  height: 80px;
   background-size: cover;
 }
 
@@ -551,9 +659,9 @@ div.socials {
   .news-highlights {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "large-pic top-right-pic"
-    "large-pic bottom-right-pic";
+    grid-template-areas:
+      "large-pic top-right-pic"
+      "large-pic bottom-right-pic";
     height: 500px;
   }
 
@@ -609,13 +717,24 @@ div.socials {
     row-gap: 20px;
     column-gap: 20px;
   }
+ 
+  .apps-main-pic,
+  .gear-main-pic,
+  .tech-main-pic,
+  .creative-main-pic,
+  .podium-main-pic,
+  .insights-main-pic,
+  .launch-main-pic,
+  .distract-main-pic {
+    height: 345px;
+  }
 
   /* Deals */
 
   .deals-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 10px;
   }
 
@@ -623,6 +742,7 @@ div.socials {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
+    height: auto;
   }
 
   .deal-pic {
@@ -855,6 +975,17 @@ div.socials {
     margin: 0;
   }
 
+  .apps-main-pic,
+  .gear-main-pic,
+  .tech-main-pic,
+  .creative-main-pic,
+  .podium-main-pic,
+  .insights-main-pic,
+  .launch-main-pic,
+  .distract-main-pic {
+    height: 266px;
+  }
+
   /* Deals */
 
   .deals-main {
@@ -867,6 +998,7 @@ div.socials {
   .deal-container {
     display: grid;
     grid-template-columns: 1fr;
+    height: auto;
   }
 
   .deal-pic {
