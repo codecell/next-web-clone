@@ -7,7 +7,7 @@ This a basic HTML/CSS clone of the [TheNextWeb](https://thenextweb.com/) website
 ![image](https://user-images.githubusercontent.com/46686100/72199855-65492600-3442-11ea-9127-df403b36e7da.png)
 
 ## Live Demo 
- Hosted [here]() with love from [Githack](https://raw.githack.com/)
+ Hosted [here](https://raw.githack.com/codecell/next-web-clone/develop/index.html) with love from [Githack](https://raw.githack.com/)
 
 ## Getting Started
 
