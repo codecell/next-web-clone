@@ -4,13 +4,15 @@
   "description": "\"# next-web-clone\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylelint": "npx stylelint /Users/hp/Desktop/microverse/next-web-clone/style.css",
+    "stylelint-fix": "npx stylelint /Users/hp/Desktop/microverse/next-web-clone/style.css --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codecell/next-web-clone.git"
   },
-  "author": "",
+  "author": "Carlos Santamaria J. B && Ezaka Alfred N.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codecell/next-web-clone/issues"

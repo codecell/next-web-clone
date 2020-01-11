@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
 }
 
-body{
+body {
   min-width: 375px;
   max-width: 1400px;
   background-color: whitesmoke;
@@ -22,7 +22,7 @@ main {
 }
 
 section > h2 {
-  color: #FF4422;
+  color: #f42;
   margin-bottom: 15px;
   font-size: 30px;
 }
@@ -33,7 +33,7 @@ section > h2 span {
   margin-left: 5px;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   top: 0;
@@ -46,8 +46,10 @@ section > h2 span {
   z-index: 9999;
 }
 
-.top-navbar-row ul, .second-navbar-row ul, 
-.desktop-screen-ul, .desktop-search-div {
+.top-navbar-row ul,
+.second-navbar-row ul,
+.desktop-screen-ul,
+.desktop-search-div {
   display: none;
 }
 
@@ -70,7 +72,8 @@ section > h2 span {
   border-left: 1px solid rgb(240, 234, 234);
 }
 
-.icon-menu, .icon-search {
+.icon-menu,
+.icon-search {
   font-size: 23px !important;
   margin-top: 15px;
 }
@@ -102,12 +105,14 @@ section > h2 span {
 }
 
 .large-pic {
-  background: linear-gradient(to bottom right, rgba(255,0,255,0.7), rgba(0, 0, 0, 0.2) 80%),
-  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg)');
+  background:
+    linear-gradient(to bottom right, rgba(255, 0, 255, 0.7), rgba(0, 0, 0, 0.2) 80%),
+    url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg)');
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .large-pic-label {
   font-size: 20px;
   font-weight: bold;
@@ -130,6 +135,15 @@ section > h2 span {
   margin-left: 5px;
 }
 
+.latest-news-segments > p {
+  font-size: 22px;
+}
+
+.title-div > p {
+  margin: 40px auto auto 70px;
+  font-size: 20px;
+}
+
 .news-highlights-info-main > p:first-child {
   font-family: 'Rajdhani', sans-serif !important;
 }
@@ -139,16 +153,18 @@ section > h2 span {
 }
 
 .top-right-pic {
-  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.4) 0%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.65) 100%),
-  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/jeopardy-796x448.jpg');
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.4) 0%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.65) 100%),
+    url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/jeopardy-796x448.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
 .bottom-right-pic {
-  background: linear-gradient(to bottom,  rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.65) 100%),
-  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric.jpg');
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.65) 100%),
+    url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -181,16 +197,12 @@ section > h2 span {
 .latest-news-pic4 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25181_primary_image_wide-540x270.jpg"); }
 .latest-news-pic5 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric-509x270.jpg"); }
 .latest-news-pic6 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25139_primary_image_wide-1-540x270.jpg"); }
-.latest-news-pic7 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg")}
-.latest-news-pic8 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-85-516x270.jpg") }
+.latest-news-pic7 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg"); }
+.latest-news-pic8 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-85-516x270.jpg"); }
 
 .news-image {
   height: auto;
   background-size: cover;
-}
-
-.latest-news-segments > p {
-  font-size: 22px;
 }
 
 .latest-news-segments span {
@@ -203,13 +215,8 @@ section > h2 span {
 
 .title-div {
   height: 40px;
-  background-color: #ff4422;
+  background-color: #f42;
   color: white;
-}
-
-.title-div > p {
-  margin: 40px auto auto 70px;
-  font-size: 20px;
 }
 
 /* Rounds */
@@ -230,12 +237,12 @@ section > h2 span {
   background-color: rgba(255, 68, 34, 0.08);
 }
 
-.round-info-div h4{
+.round-info-div h4 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.round-info-div h5{
+.round-info-div h5 {
   font-size: 12px;
   font-weight: 200;
 }
@@ -249,7 +256,7 @@ section > h2 span {
 }
 
 .latest-rounds-info h2 {
-  color: #F42;
+  color: #f42;
   margin-bottom: 15px;
   font-size: 30px;
 }
@@ -261,7 +268,7 @@ section > h2 span {
   border-bottom: 1px solid  rgba(255, 68, 34, 0.5);
 }
 
-.byline-story{
+.byline-story {
   font-size: 14px;
   font-weight: 200;
 }
@@ -276,19 +283,19 @@ hr {
 .most-popular h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  font-weight: 100; 
+  font-weight: 100;
 }
 
 .most-popular h3 {
   font-size: 20px;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .author-date {
   font-weight: 100;
 }
 
-.categories{
+.categories {
   margin: auto 20px;
 }
 
@@ -296,17 +303,21 @@ hr {
 
 .apps-main-pic {
   height: 466px;
-  color: white; 
+  color: white;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('./assets/images/popular.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.app-main, .gear-main,
-.tech-main, .creative-main,
-.podium-main, .insights-main,
-.launch-main, .distract-main {
+.app-main,
+.gear-main,
+.tech-main,
+.creative-main,
+.podium-main,
+.insights-main,
+.launch-main,
+.distract-main {
   display: grid;
 }
 
@@ -332,23 +343,28 @@ hr {
   left: 10px;
 }
 
-.latest-gear, .latest-app,
-.latest-tech, .latest-creative, 
-.latest-podium, .latest-insights, 
-.latest-launch, .latest-distract{
+.latest-gear,
+.latest-app,
+.latest-tech,
+.latest-creative,
+.latest-podium,
+.latest-insights,
+.latest-launch,
+.latest-distract {
   display: grid;
   grid-template-columns: 1fr 96px;
   height: 96px;
   background-color: rgb(253, 241, 239);
-  color: #ff4422;
+  color: #f42;
 }
+
 .gear-small-img {
   background: url('./assets/images/tiger-smaller-gear.jpg');
   background-size: cover;
   margin-top: 3px;
 }
 
-/*<<< TECH SECTION >>> */
+/* <<< TECH SECTION >>> */
 
 .tech-main-pic {
   height: 466px;
@@ -365,7 +381,7 @@ hr {
   margin-top: 3px;
 }
 
-/*<<< CREATIVE SECTION >>> */
+/* <<< CREATIVE SECTION >>> */
 
 .creative-main-pic {
   height: 466px;
@@ -477,7 +493,7 @@ hr {
   content: "\2022";
   color: red;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
@@ -529,6 +545,8 @@ footer {
 }
 
 .footer-top {
+  display: grid;
+  background-color: #131313;
   text-align: center;
   padding: 20px;
 }
@@ -561,11 +579,6 @@ div.socials {
   margin-right: 5px;
 }
 
-.footer-top{
-  display: grid;
-  background-color: #131313;
-}
-
 .copyright {
   text-align: center;
   color: whitesmoke;
@@ -590,7 +603,6 @@ div.socials {
 /* MEDIUM SIZED SCREENS */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   body {
     max-width: 1024px;
   }
@@ -621,12 +633,13 @@ div.socials {
   }
 
   .top-navbar-row {
-    background: #000000;
+    background: #000;
     height: 35px !important;
     width: 100% !important;
   }
 
-  .top-navbar-row ul, .second-navbar-row ul {
+  .top-navbar-row ul,
+  .second-navbar-row ul {
     list-style: none;
     display: inline-block;
     margin-top: 5px;
@@ -780,8 +793,7 @@ div.socials {
   .footer-levels {
     display: inline-block;
   }
-
-} 
+}
 
 /* DESKTOP SCREENS */
 @media (min-width: 1024px) and (max-width: 1400px) {
@@ -878,7 +890,7 @@ div.socials {
 
   .desktop-search-div > i {
     display: inline-block !important;
-    margin: 10px  auto auto 20px!important;
+    margin: 10px  auto auto 20px !important;
   }
 
   .second-navbar-row ul > li {
@@ -1017,5 +1029,4 @@ div.socials {
   .footer-levels {
     display: inline-block;
   }
-
 }
