@@ -51,7 +51,7 @@ section > h2 span {
   display: none;
 }
 
-.tnw-logo-container{
+.tnw-logo-container {
   background-image: url('./assets/images/tnw-logo.png');
   background-size: cover;
   background-position: center center;
@@ -102,7 +102,7 @@ section > h2 span {
 }
 
 .large-pic {
-  background: linear-gradient(to bottom right, rgba(255,0,255,0.5), rgba(0, 0, 0, 0.904) 99%),
+  background: linear-gradient(to bottom right, rgba(255,0,255,0.7), rgba(0, 0, 0, 0.2) 80%),
   url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg)');
   background-size: cover;
   background-position: center;
@@ -139,7 +139,7 @@ section > h2 span {
 }
 
 .top-right-pic {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%),
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.4) 0%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.65) 100%),
   url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/jeopardy-796x448.jpg');
   background-size: cover;
   background-position: center;
@@ -147,7 +147,7 @@ section > h2 span {
 }
 
 .bottom-right-pic {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%),
+  background: linear-gradient(to bottom,  rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.65) 100%),
   url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric.jpg');
   background-size: cover;
   background-position: center;
@@ -162,15 +162,31 @@ section > h2 span {
   margin: auto 20px;
 }
 
+.latest-news-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
 .latest-news-segments {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 75px 1fr;
+  height: auto;
   column-gap: 10px;
 }
 
-.latest-news-pic {
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25181_primary_image_wide-540x270.jpg');
-  height: 50px;
+.latest-news-pic1 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-516x270.jpg"); }
+.latest-news-pic2 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-513x270.jpg"); }
+.latest-news-pic3 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/jeopardy-480x270.jpg"); }
+.latest-news-pic4 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25181_primary_image_wide-540x270.jpg"); }
+.latest-news-pic5 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/fiat-centoventi-car-500-tesla-ces-concept-car-vehicle-battery-electric-509x270.jpg"); }
+.latest-news-pic6 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/sale_25139_primary_image_wide-1-540x270.jpg"); }
+.latest-news-pic7 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg")}
+.latest-news-pic8 { background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-85-516x270.jpg") }
+
+.news-image {
+  height: auto;
+  background-size: cover;
 }
 
 .latest-news-segments > p {
@@ -230,6 +246,12 @@ section > h2 span {
   height: 60px;
   background-color: thistle;
   margin: 10px;
+}
+
+.latest-rounds-info h2 {
+  color: #F42;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
 
 .investment-card {
@@ -563,12 +585,11 @@ div.socials {
   display: block;
 }
 
-
 /* MEDIA QUERIES */
 
 /* MEDIUM SIZED SCREENS */
 
-@media (min-width: 768px) and (max-width: 1024px)  {
+@media (min-width: 768px) and (max-width: 1024px) {
 
   body {
     max-width: 1024px;
@@ -586,7 +607,7 @@ div.socials {
   .icons-container div {
     border-left: none;
   }
-  
+
   .navbar {
     font-family: monospace;
     height: 80px;
@@ -598,7 +619,7 @@ div.socials {
     height: 80px;
     flex-direction: column;
   }
-  
+
   .top-navbar-row {
     background: #000000;
     height: 35px !important;
@@ -610,7 +631,7 @@ div.socials {
     display: inline-block;
     margin-top: 5px;
   }
-  
+
   .top-navbar-row ul > li {
     display: inline-block;
     color: #959595;
@@ -679,13 +700,18 @@ div.socials {
   .latest-news-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
   }
 
   .latest-news-segments {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .news-image {
+    height: 130px;
+    background-size: cover;
   }
 
   .latest-news-pic {
@@ -717,7 +743,7 @@ div.socials {
     row-gap: 20px;
     column-gap: 20px;
   }
- 
+
   .apps-main-pic,
   .gear-main-pic,
   .tech-main-pic,
@@ -769,10 +795,6 @@ div.socials {
     width: 100%;
   }
 
-  section {
-    margin: 25px 90px;
-  }
-
   section.news-highlights {
     margin: unset;
     margin-bottom: 80px !important;
@@ -785,17 +807,12 @@ div.socials {
   .icons-container div {
     border-left: none;
   }
-  
+
   .navbar {
     font-family: monospace;
     height: 80px;
     width: 100%;
     display: block;
-  }
-
-  .icons-container {
-    height: 80px;
-    flex-direction: column;
   }
 
   .tnw-logo-container {
@@ -808,22 +825,18 @@ div.socials {
     flex-direction: column;
   }
 
-  .icons-container {
-    height: 80px;
-    flex-direction: column;
-  }
-  
   .top-navbar-row {
-    background: #000000;
+    background: #000;
     height: 35px !important;
     width: 100% !important;
   }
 
-  .top-navbar-row ul, .second-navbar-row ul {
+  .top-navbar-row ul,
+  .second-navbar-row ul {
     list-style: none;
     display: inline-block;
   }
-  
+
   .top-navbar-row-ul-container {
     display: flex;
     justify-content: space-between;
@@ -873,10 +886,6 @@ div.socials {
     margin: 7px auto 5px 20px;
   }
 
-  .desktop-screen-ul {
-    display: inline-block !important;
-  }
-
   /* news highlights */
   .large-pic {
     grid-area: large-pic;
@@ -893,13 +902,12 @@ div.socials {
   .news-highlights {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "large-pic top-right-pic"
-    "large-pic bottom-right-pic";
+    grid-template-areas:
+      "large-pic top-right-pic"
+      "large-pic bottom-right-pic";
     height: 500px;
   }
 
-  
   .desktop-logo-parent-div {
     margin: 25px 20px auto 20px;
     display: flex;
@@ -934,13 +942,12 @@ div.socials {
     margin-bottom: 15px;
   }
 
-  .latest-news-pic {
-    max-width: 540px;
-    height: 120px;
-    max-height: 270px;
+  .news-image {
+    height: 150px;
+    background-size: cover;
   }
 
-    /* Rounds */
+  /* Rounds */
 
   .rounds-main {
     display: grid;
