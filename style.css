@@ -16,6 +16,11 @@ a {
   color: #fff;
 }
 
+li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
+}
+
 main {
   background-color: white;
   margin-top: 60px;
@@ -273,11 +278,6 @@ section > h2 span {
   font-weight: 200;
 }
 
-hr {
-  border: 1px solid rgba(200, 200, 200, 0.2);
-  margin-bottom: 10px;
-}
-
 /* <<< CATEGORIES >>>> */
 
 .most-popular h5 {
@@ -480,6 +480,7 @@ hr {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: rgb(97, 97, 97);
+  margin-top: 15px;
 }
 
 .app-main > ul li::before,
@@ -601,7 +602,6 @@ div.socials {
 /* MEDIA QUERIES */
 
 /* MEDIUM SIZED SCREENS */
-
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     max-width: 1024px;
@@ -650,6 +650,7 @@ div.socials {
     color: #959595;
     font-size: 0.9em;
     margin-right: 4px;
+    border-bottom: none !important;
   }
 
   .top-navbar-news-item {
@@ -675,6 +676,7 @@ div.socials {
   .second-navbar-row ul > li {
     display: inline-block;
     margin-right: 10px;
+    border-bottom: none !important;
   }
 
   /* news highlights */
@@ -859,7 +861,8 @@ div.socials {
     display: inline-block;
     color: #959595;
     font-size: 0.8em;
-    margin: 6px 4px auto auto;
+    margin: 6px 4px auto auto !important;
+    border-bottom: none !important;
   }
 
   .top-navbar-news-item {
@@ -895,7 +898,8 @@ div.socials {
 
   .second-navbar-row ul > li {
     display: inline-block;
-    margin: 7px auto 5px 20px;
+    margin: 7px auto 5px 20px !important;
+    border-bottom: none !important;
   }
 
   /* news highlights */
