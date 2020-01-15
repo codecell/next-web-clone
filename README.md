@@ -1,6 +1,6 @@
 # next-web-clone"
 
-This a basic HTML/CSS clone of the [TheNextWeb](https://thenextweb.com/) website. Here we demonstrate responsive UI design using the mobile-first approach. A bulk of this responsiveness here is built heavily on and using the new CSS GRID architecture.  
+This is a basic HTML/CSS clone of the [TheNextWeb](https://thenextweb.com/) website. Here we demonstrate responsive UI design using the mobile-first approach. A bulk of this responsiveness here is built heavily on and using the new CSS GRID architecture.  
 
 
 ## Preview
